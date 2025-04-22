@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">spllabportal</string>
+    <string name="google_web_client_id">1006634308462-03722vg38mg3u60e2jh0l556jm94mmjk.apps.googleusercontent.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="status_options">
+        <item>Approved</item>
+        <item>Rejected</item>
+    </string-array>
+    <string-array name="week_numbers">
+        <item>Week 1</item>
+        <item>Week 2</item>
+        <item>Week 3</item>
+        <item>Week 4</item>
+        <item>Week 5</item>
+        <item>Week 6</item>
+        <item>Week 7</item>
+        <item>Week 8</item>
+
+
+
+        <!-- Add all the weeks here -->
+    </string-array>
+
+
+
+</resources>

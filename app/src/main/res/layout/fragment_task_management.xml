@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskManagementFragment"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvProjectDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Project Duration: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="12dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvProjectDuration"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/etStartDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:hint="Select Start Date"
+            android:textColorHint="@color/gray"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/baseline_calendar_month_24" />
+
+        <ImageView
+            android:id="@+id/ivCalendarIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="Select Date"
+            android:src="@drawable/baseline_calendar_month_24"
+            android:padding="8dp"
+            android:layout_marginStart="8dp"
+            app:tint="@color/black" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        app:layout_constraintBottom_toTopOf="@id/completionFieldsContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/weekLogContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/completionFieldsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/scrollView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="12dp">
+
+        <!-- GitHub Link Section -->
+        <EditText
+            android:id="@+id/etGitHubLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter GitHub Link"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:textColorHint="@color/gray"
+            android:textSize="16sp"
+            android:enabled="false" />
+
+        <TextView
+            android:id="@+id/tvSaveGitHubLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save GitHub Link"
+            android:textColor="@color/teal_700"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Demo Video Section -->
+        <EditText
+            android:id="@+id/DemoVideoLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Demo Video Link"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:textColorHint="@color/gray"
+            android:textSize="16sp"
+            android:enabled="false" />
+
+        <TextView
+            android:id="@+id/tvSaveDemoVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Demo Video"
+            android:textColor="@color/teal_700"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

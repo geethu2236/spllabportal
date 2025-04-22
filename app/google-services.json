@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "1006634308462",
+    "project_id": "arctic-robot-432605-e6",
+    "storage_bucket": "arctic-robot-432605-e6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006634308462:android:d55a50554a262d5e83a77f",
+        "android_client_info": {
+          "package_name": "com.example.spllabportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006634308462-03722vg38mg3u60e2jh0l556jm94mmjk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.spllabportal",
+            "certificate_hash": "66cf7daff001db6c2a5cc1725cb2b5c1fbfab8d1"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3LVi9K5U90ZLUKYZpdTck-Hx6p_M70Fk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

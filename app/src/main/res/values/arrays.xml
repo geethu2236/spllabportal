@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="departments">
+       <item>Biomedical Engineering</item>
+        <item>Civil Engineering</item>
+        <item>Computer Science and Design</item>
+        <item>Computer Science and Engineering</item>
+        <item>Electrical and Electronics Engineering</item>
+        <item>Electronics and Communication Engineering</item>
+        <item>Electronics and Instrumentation Engineering</item>
+        <item> Information Science and Engineering</item>
+        <item> Mechanical Engineering</item>
+        <item> Mechatronics Engineering</item>
+        <item> Agricultural Engineering</item>
+        <item> Artificial Intelligence and Data Science</item>
+        <item> Artificial Intelligence and Machine Learning</item>
+        <item> Biotechnology</item>
+        <item> Computer Science and Business Systems</item>
+        <item> Computer Technology</item>
+        <item>  Food Technology</item>
+        <item>  Fashion Technology</item>
+        <item>Information Technology</item>
+        <item>  Textile Technology</item>
+
+    </string-array>
+
+    <string-array name="special_labs">
+        <item>Digital Technology</item>
+        <item>Robotics</item>
+        <item>Sensors</item>
+        <item>Embedded Technology</item>
+        <item>Bioprocess And Bioproducts Lab</item>
+        <item> Nanotechnology and Computational Lab</item>
+        <item> AI based Industrial Automation Lab</item>
+        <item> AI and Smart Sensor Lab</item>
+        <item>  Communication Protocol Lab</item>
+        <item>  Electrical Product Development Lab</item>
+        <item> Electronic Product Development Lab</item>
+        <item>Embedded Technology Lab</item>
+        <item>  Hackathon Lab</item>
+        <item> Intelligent Communication And Embedded Systems Lab</item>
+        <item>IOT Lab</item>
+        <item> Printed Circuit Board Lab</item>
+        <item>Blockchain Technology Lab</item>
+        <item> Cloud Computing Lab</item>
+        <item> Cyber Security Lab</item>
+        <item> Data Science Lab</item>
+        <item> Mobile and Web App Lab</item>
+        <item> XR Studio</item>
+        <item>Manufacturing and Fabrication Lab</item>
+        <item>Unmanned Aerial Vehicle Lab</item>
+        <item> Unmanned Underwater Vehicle Lab</item>
+        <item> Integrated Smart Buildings Lab</item>
+        <item> Art and Design Lab</item>
+        <item> Silk Fashion Laboratory</item>
+        <item>Technical Textile Lab</item>
+        <item> Functional Food and Nutraceuticals Lab</item>
+        <item>  Next Generation Food Lab</item>
+    </string-array>
+
+    <string-array name="years">
+        <item>1st Year</item>
+        <item>2nd Year</item>
+        <item>3rd Year</item>
+        <item>4th Year</item>
+    </string-array>
+
+    <string-array name="Durations">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="Event_Type">
+        <item>Paper Presentation</item>
+        <item>Project Presentation</item>
+        <item>Conference</item>
+        <item>Hackathon</item>
+        <item>Startup_events</item>
+        <item>Patent-Published</item>
+        <item>Patent-Grant</item>
+    </string-array>
+    <string-array name="Event_Mode">
+        <item>Online</item>
+        <item>Offline</item>
+        <item>Patent</item>
+    </string-array>
+
+    <string-array name="Achievements">
+        <item>Winner</item>
+        <item>RunnerUp</item>
+        <item>Participated</item>
+    </string-array>
+
+
+</resources>

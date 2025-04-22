@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- Header Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Week Log"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/jacques_francois"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
+
+    <!-- Search Bar and Filter Section -->
+
+
+    <!-- Scrollable Table Layout with Elevation -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="567dp"
+            android:fillViewport="true"
+            android:padding="8dp">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/projectTable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:stretchColumns="*">
+
+                    <!-- Table Header Row (UPDATED) -->
+                    <TableRow
+                        android:background="@color/teal_700"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:padding="8dp"
+                            android:text="S.NO"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:padding="8dp"
+                            android:text="TEAM LEADER NAME"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:padding="8dp"
+                            android:text="WEEK NO"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:padding="8dp"
+                            android:text="DESCRIPTION"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:padding="8dp"
+                            android:text="STATUS"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+
+                    <!-- Dynamic Rows will be added here programmatically -->
+                </TableLayout>
+            </HorizontalScrollView>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <!-- No Data Message -->
+    <TextView
+        android:id="@+id/noDataMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No data found"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:padding="16dp" />
+
+    <!-- RecyclerView for Project List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/projectRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="12dp"
+        android:scrollbars="vertical" />
+</LinearLayout>

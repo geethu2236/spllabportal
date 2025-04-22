@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#F44336</color>
+    <color name="teal_700">#65558f </color>
+    <color name="gray">#808080 </color>
+    <color name="pending">#FF9800</color> <!-- Example color -->
+    <color name="approved">#4CAF50</color> <!-- Example color -->
+    <color name="rejected">#F44336</color> <!-- Example color -->
+
+</resources>
+
