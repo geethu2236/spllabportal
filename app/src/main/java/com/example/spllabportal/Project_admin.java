@@ -97,13 +97,14 @@ public class Project_admin extends Fragment {
         });
     }
 
-    // Check if a project has both GitHub Link and Demo Video Link
+
     private boolean hasRequiredLinks(DataSnapshot projectSnapshot) {
         String githubLink = getValue(projectSnapshot, "GitHubLink");
         String demoVideoLink = getValue(projectSnapshot, "Demo Video");
 
         return githubLink != null && !githubLink.isEmpty() &&
                 demoVideoLink != null && !demoVideoLink.isEmpty();
+
     }
 
     // Display projects in table
